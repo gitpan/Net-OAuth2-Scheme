@@ -1,0 +1,37 @@
+{
+   "abstract" : "Token scheme definition framework for OAuth 2.0",
+   "author" : [
+      "Roger Crew <crew@cs.stanford.edu>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.101900, CPAN::Meta::Converter version 2.101670",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Net-OAuth2-Scheme",
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.31"
+         }
+      }
+   },
+   "release_status" : "testing",
+   "resources" : {
+      "bugtracker" : {
+         "mailto" : "bug-net-oauth2-scheme@rt.cpan.org",
+         "web" : "http://rt.cpan.org/NoAuth/Bugs.html?Dist=Net-OAuth2-Scheme"
+      },
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/wrog/Net-OAuth2-Scheme.git",
+         "web" : "http://github.com/wrog/Net-OAuth2-Scheme"
+      }
+   },
+   "version" : "0.010001_001"
+}
+
