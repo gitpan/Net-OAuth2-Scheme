@@ -3,7 +3,7 @@ use strict;
 
 package Net::OAuth2::Scheme::Mixin::Root;
 BEGIN {
-  $Net::OAuth2::Scheme::Mixin::Root::VERSION = '0.010001_001';
+  $Net::OAuth2::Scheme::Mixin::Root::VERSION = '0.010002_002';
 }
 # ABSTRACT: defines the root group setup
 
@@ -92,7 +92,7 @@ Net::OAuth2::Scheme::Mixin::Root - defines the root group setup
 
 =head1 VERSION
 
-version 0.010001_001
+version 0.010002_002
 
 =head1 SYNOPSIS
 

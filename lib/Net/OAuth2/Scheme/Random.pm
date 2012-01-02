@@ -3,7 +3,7 @@ use warnings;
 
 package Net::OAuth2::Scheme::Random;
 BEGIN {
-  $Net::OAuth2::Scheme::Random::VERSION = '0.010001_001';
+  $Net::OAuth2::Scheme::Random::VERSION = '0.010002_002';
 }
 # ABSTRACT: random number generator interface
 use Carp;
@@ -41,9 +41,9 @@ sub import {
             last;
         }
     }
-    $RNG_Class = 'Math::Random::ISAAC'
+    $RNG_Class = 'Math::Random::MT::Auto'
       unless defined $RNG_Class;
-
+    eval "require $RNG_Class;" or die $@;
     # set @seed
     @seed = ($seeds{$RNG_Class} || \&_make_seed)->();
 }
@@ -202,6 +202,7 @@ use Config;
 $ish{$mrma} = $Config{uvsize} == 8 ? 3 : 2;
 
 $seeds{$mrma} = sub {
+    Math::Random::MT::Auto->import unless defined $MRMA::PRNG;
     my @s = $MRMA::PRNG->get_seed;
     if (@s < 4) {
         # class was loaded with :noauto or auto-seeding failed;
@@ -237,18 +238,18 @@ Net::OAuth2::Scheme::Random - random number generator interface
 
 =head1 VERSION
 
-version 0.010001_001
+version 0.010002_002
 
 =head1 SYNOPSIS
 
- # use something (defaults to ISAAC)
+ # use something (defaults to Math::Random::MT::Auto)
  use Net::OAuth2::Scheme::Random;
-
- # use ISAAC;
- use Net::OAuth2::Scheme::Random 'Math::Random::ISAAC';
 
  # use Mersenne Twister
  use Net::OAuth2::Scheme::Random 'Math::Random::MT::Auto';
+
+ # use ISAAC;
+ use Net::OAuth2::Scheme::Random 'Math::Random::ISAAC';
 
  $rng = Net::OAuth2::Scheme::Random->new
  $rng->bytes(24) # return 24 random octets

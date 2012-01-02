@@ -11,7 +11,14 @@ use ExtUtils::MakeMaker 6.31;
 my %WriteMakefileArgs = (
   'ABSTRACT' => 'Token scheme definition framework for OAuth 2.0',
   'AUTHOR' => 'Roger Crew <crew@cs.stanford.edu>',
-  'BUILD_REQUIRES' => {},
+  'BUILD_REQUIRES' => {
+    'Cache::Memory' => '0',
+    'HTTP::Message::PSGI' => '0',
+    'HTTP::Request::Common' => '0',
+    'Plack::Request' => '0',
+    'Test::Exception' => '0',
+    'Test::More' => '0'
+  },
   'CONFIGURE_REQUIRES' => {
     'ExtUtils::MakeMaker' => '6.31'
   },
@@ -19,8 +26,14 @@ my %WriteMakefileArgs = (
   'EXE_FILES' => [],
   'LICENSE' => 'perl',
   'NAME' => 'Net::OAuth2::Scheme',
-  'PREREQ_PM' => {},
-  'VERSION' => '0.010001_001',
+  'PREREQ_PM' => {
+    'Digest::SHA' => '0',
+    'MIME::Base64' => '0',
+    'Math::Random::MT::Auto' => '0',
+    'Thread::IID' => '0',
+    'URI::Escape' => '0'
+  },
+  'VERSION' => '0.010002_002',
   'test' => {
     'TESTS' => 't/*.t'
   }

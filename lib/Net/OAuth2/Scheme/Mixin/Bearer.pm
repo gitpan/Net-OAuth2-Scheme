@@ -3,7 +3,7 @@ use strict;
 
 package Net::OAuth2::Scheme::Mixin::Bearer;
 BEGIN {
-  $Net::OAuth2::Scheme::Mixin::Bearer::VERSION = '0.010001_001';
+  $Net::OAuth2::Scheme::Mixin::Bearer::VERSION = '0.010002_002';
 }
 # ABSTRACT: implement bearer token schemes
 
@@ -256,7 +256,7 @@ Net::OAuth2::Scheme::Mixin::Bearer - implement bearer token schemes
 
 =head1 VERSION
 
-version 0.010001_001
+version 0.010002_002
 
 =head1 SYNOPSIS
 
