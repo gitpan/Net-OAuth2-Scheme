@@ -27,4 +27,4 @@ requires:
 resources:
   bugtracker: http://rt.cpan.org/NoAuth/Bugs.html?Dist=Net-OAuth2-Scheme
   repository: git://github.com/wrog/Net-OAuth2-Scheme.git
-version: 0.010002_002
+version: 0.010003_003

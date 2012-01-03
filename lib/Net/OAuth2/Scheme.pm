@@ -3,7 +3,7 @@ use strict;
 
 package Net::OAuth2::Scheme;
 BEGIN {
-  $Net::OAuth2::Scheme::VERSION = '0.010002_002';
+  $Net::OAuth2::Scheme::VERSION = '0.010003_003';
 }
 # ABSTRACT: Token scheme definition framework for OAuth 2.0
 
@@ -88,7 +88,7 @@ Net::OAuth2::Scheme - Token scheme definition framework for OAuth 2.0
 
 =head1 VERSION
 
-version 0.010002_002
+version 0.010003_003
 
 =head1 SYNOPSIS
 
@@ -100,7 +100,7 @@ frameworks in use and we're trying to be agnostic about that, but...
     format => 'bearer_handle',
     vtable => 'shared_cache',
     cache => ...
-    # see L<Net::OAuth2::Scheme::Factory> for other possibilities
+    # see Net::OAuth2::Scheme::Factory for other possibilities
   );
 
   ##

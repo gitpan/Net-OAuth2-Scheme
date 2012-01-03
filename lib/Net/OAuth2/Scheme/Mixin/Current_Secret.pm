@@ -3,7 +3,7 @@ use strict;
 
 package Net::OAuth2::Scheme::Mixin::Current_Secret;
 BEGIN {
-  $Net::OAuth2::Scheme::Mixin::Current_Secret::VERSION = '0.010002_002';
+  $Net::OAuth2::Scheme::Mixin::Current_Secret::VERSION = '0.010003_003';
 }
 # ABSTRACT: the 'current_secret' option group
 
@@ -91,7 +91,7 @@ Net::OAuth2::Scheme::Mixin::Current_Secret - the 'current_secret' option group
 
 =head1 VERSION
 
-version 0.010002_002
+version 0.010003_003
 
 =head1 SYNOPSIS
 

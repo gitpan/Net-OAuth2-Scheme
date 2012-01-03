@@ -3,7 +3,7 @@ use strict;
 
 package Net::OAuth2::Scheme::Mixin::Transport;
 BEGIN {
-  $Net::OAuth2::Scheme::Mixin::Transport::VERSION = '0.010002_002';
+  $Net::OAuth2::Scheme::Mixin::Transport::VERSION = '0.010003_003';
 }
 # ABSTRACT: the 'transport' option group and helper functions
 
@@ -258,7 +258,7 @@ Net::OAuth2::Scheme::Mixin::Transport - the 'transport' option group and helper 
 
 =head1 VERSION
 
-version 0.010002_002
+version 0.010003_003
 
 =head1 SYNOPSIS
 

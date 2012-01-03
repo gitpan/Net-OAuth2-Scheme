@@ -3,7 +3,7 @@ use strict;
 
 package Net::OAuth2::Scheme::Mixin::HMac;
 BEGIN {
-  $Net::OAuth2::Scheme::Mixin::HMac::VERSION = '0.010002_002';
+  $Net::OAuth2::Scheme::Mixin::HMac::VERSION = '0.010003_003';
 }
 # ABSTRACT: implement http_hmac token scheme
 
@@ -178,7 +178,7 @@ Net::OAuth2::Scheme::Mixin::HMac - implement http_hmac token scheme
 
 =head1 VERSION
 
-version 0.010002_002
+version 0.010003_003
 
 =head1 SYNOPSIS
 

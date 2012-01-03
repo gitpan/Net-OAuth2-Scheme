@@ -3,7 +3,7 @@ use warnings;
 
 package Net::OAuth2::Scheme::Mixin::Format;
 BEGIN {
-  $Net::OAuth2::Scheme::Mixin::Format::VERSION = '0.010002_002';
+  $Net::OAuth2::Scheme::Mixin::Format::VERSION = '0.010003_003';
 }
 # ABSTRACT: the 'format' option group and 'token_validate'
 
@@ -59,7 +59,7 @@ Net::OAuth2::Scheme::Mixin::Format - the 'format' option group and 'token_valida
 
 =head1 VERSION
 
-version 0.010002_002
+version 0.010003_003
 
 =head1 SYNOPSIS
 
