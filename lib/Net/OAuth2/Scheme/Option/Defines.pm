@@ -2,7 +2,7 @@ use warnings;
 use strict;
 package Net::OAuth2::Scheme::Option::Defines;
 BEGIN {
-  $Net::OAuth2::Scheme::Option::Defines::VERSION = '0.010003_003';
+  $Net::OAuth2::Scheme::Option::Defines::VERSION = '0.010004_004';
 }
 # ABSTRACT: functions for creating option groups and default values
 
@@ -51,7 +51,7 @@ sub Default_Value {
     ${"${class}::Default"}{$oname} = $value;
 
     # suppress warning about Default only being used once
-    ${"${class}::Default"}{''} = undef;
+    ${"${class}::Default"}{''} = 0;
 }
 
 sub Define_Group {
@@ -72,7 +72,7 @@ sub Define_Group {
          : ()),
        };
     # suppress warning about Group only being used once
-    ${"${class}::Group"}{''} = undef;
+    ${"${class}::Group"}{''} = +{ keys => [] };
 }
 
 1;
@@ -87,7 +87,7 @@ Net::OAuth2::Scheme::Option::Defines - functions for creating option groups and 
 
 =head1 VERSION
 
-version 0.010003_003
+version 0.010004_004
 
 =head1 SYNOPSIS
 
