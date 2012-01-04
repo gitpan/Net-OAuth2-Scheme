@@ -2,7 +2,7 @@ use warnings;
 use strict;
 package Net::OAuth2::Scheme::Option::Defines;
 BEGIN {
-  $Net::OAuth2::Scheme::Option::Defines::VERSION = '0.010004_004';
+  $Net::OAuth2::Scheme::Option::Defines::VERSION = '0.010005_005';
 }
 # ABSTRACT: functions for creating option groups and default values
 
@@ -87,7 +87,7 @@ Net::OAuth2::Scheme::Option::Defines - functions for creating option groups and 
 
 =head1 VERSION
 
-version 0.010004_004
+version 0.010005_005
 
 =head1 SYNOPSIS
 

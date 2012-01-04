@@ -3,7 +3,7 @@ use strict;
 
 package Net::OAuth2::Scheme::Counter;
 BEGIN {
-  $Net::OAuth2::Scheme::Counter::VERSION = '0.010004_004';
+  $Net::OAuth2::Scheme::Counter::VERSION = '0.010005_005';
 }
 # ABSTRACT: a host-wide counter
 use Carp;
@@ -102,7 +102,7 @@ Net::OAuth2::Scheme::Counter - a host-wide counter
 
 =head1 VERSION
 
-version 0.010004_004
+version 0.010005_005
 
 =head1 AUTHOR
 

@@ -3,7 +3,7 @@ use strict;
 
 package Net::OAuth2::Scheme::HmacUtil;
 BEGIN {
-  $Net::OAuth2::Scheme::HmacUtil::VERSION = '0.010004_004';
+  $Net::OAuth2::Scheme::HmacUtil::VERSION = '0.010005_005';
 }
 # ABSTRACT: hash functions and encodings
 
@@ -216,7 +216,7 @@ Net::OAuth2::Scheme::HmacUtil - hash functions and encodings
 
 =head1 VERSION
 
-version 0.010004_004
+version 0.010005_005
 
 =head1 AUTHOR
 

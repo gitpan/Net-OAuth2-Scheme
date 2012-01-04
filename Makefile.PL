@@ -30,10 +30,10 @@ my %WriteMakefileArgs = (
     'Digest::SHA' => '0',
     'MIME::Base64' => '0',
     'Math::Random::MT::Auto' => '0',
-    'Thread::IID' => '0',
+    'Thread::IID' => '0.04',
     'URI::Escape' => '0'
   },
-  'VERSION' => '0.010004_004',
+  'VERSION' => '0.010005_005',
   'test' => {
     'TESTS' => 't/*.t'
   }

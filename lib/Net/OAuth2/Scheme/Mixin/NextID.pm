@@ -3,7 +3,7 @@ use strict;
 
 package Net::OAuth2::Scheme::Mixin::NextID;
 BEGIN {
-  $Net::OAuth2::Scheme::Mixin::NextID::VERSION = '0.010004_004';
+  $Net::OAuth2::Scheme::Mixin::NextID::VERSION = '0.010005_005';
 }
 # ABSTRACT: the 'v_id_next', 'counter', and 'random' option groups
 
@@ -150,7 +150,7 @@ Net::OAuth2::Scheme::Mixin::NextID - the 'v_id_next', 'counter', and 'random' op
 
 =head1 VERSION
 
-version 0.010004_004
+version 0.010005_005
 
 =head1 SYNOPSIS
 

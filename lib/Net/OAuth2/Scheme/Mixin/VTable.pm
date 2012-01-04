@@ -3,7 +3,7 @@ use strict;
 
 package Net::OAuth2::Scheme::Mixin::VTable;
 BEGIN {
-  $Net::OAuth2::Scheme::Mixin::VTable::VERSION = '0.010004_004';
+  $Net::OAuth2::Scheme::Mixin::VTable::VERSION = '0.010005_005';
 }
 # ABSTRACT: the 'vtable', 'vtable_cache', and 'vtable_pull_queue' option groups
 
@@ -276,7 +276,7 @@ Net::OAuth2::Scheme::Mixin::VTable - the 'vtable', 'vtable_cache', and 'vtable_p
 
 =head1 VERSION
 
-version 0.010004_004
+version 0.010005_005
 
 =head1 SYNOPSIS
 
