@@ -3,7 +3,7 @@ use strict;
 
 package Net::OAuth2::Scheme::Mixin::HMac;
 BEGIN {
-  $Net::OAuth2::Scheme::Mixin::HMac::VERSION = '0.010005_005';
+  $Net::OAuth2::Scheme::Mixin::HMac::VERSION = '0.02';
 }
 # ABSTRACT: implement http_hmac token scheme
 
@@ -178,16 +178,18 @@ Net::OAuth2::Scheme::Mixin::HMac - implement http_hmac token scheme
 
 =head1 VERSION
 
-version 0.010005_005
+version 0.02
 
 =head1 SYNOPSIS
 
 =head1 DESCRIPTION
 
-This implements HMac-HTTP tokens as described in
+This is an internal module that implements HMac-HTTP tokens as described in
 L<draft-ietf-oauth-v2-http-mac-00|http://tools.ietf.org/html/draft-ietf-oauth-v2-http-mac-00>
 minus the bodyhash functionality (which was in the process of being
 discarded last I looked at the mailing list)
+
+See L<Net::OAuth2::Scheme::Factory> for actual option usage.
 
 =head1 AUTHOR
 

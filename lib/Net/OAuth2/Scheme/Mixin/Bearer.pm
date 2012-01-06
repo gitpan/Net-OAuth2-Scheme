@@ -3,7 +3,7 @@ use strict;
 
 package Net::OAuth2::Scheme::Mixin::Bearer;
 BEGIN {
-  $Net::OAuth2::Scheme::Mixin::Bearer::VERSION = '0.010005_005';
+  $Net::OAuth2::Scheme::Mixin::Bearer::VERSION = '0.02';
 }
 # ABSTRACT: implement bearer token schemes
 
@@ -256,13 +256,15 @@ Net::OAuth2::Scheme::Mixin::Bearer - implement bearer token schemes
 
 =head1 VERSION
 
-version 0.010005_005
+version 0.02
 
 =head1 SYNOPSIS
 
 =head1 DESCRIPTION
 
-This implements two varieties of Bearer tokens.
+This is an internal module that implements two varieties of Bearer tokens.
+
+See L<Net::OAuth2::Scheme::Factory> for actual option usage.
 
 =head1 AUTHOR
 

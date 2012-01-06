@@ -3,7 +3,7 @@ use strict;
 
 package Net::OAuth2::Scheme::Mixin::Current_Secret;
 BEGIN {
-  $Net::OAuth2::Scheme::Mixin::Current_Secret::VERSION = '0.010005_005';
+  $Net::OAuth2::Scheme::Mixin::Current_Secret::VERSION = '0.02';
 }
 # ABSTRACT: the 'current_secret' option group
 
@@ -65,10 +65,10 @@ sub pkg_current_secret_simple {
         my ($now) = @_;
         my (undef, undef, $expiration) = @stashed;
         if ($expiration < $now + $rekey_interval) {
-            my ($v_id, $new_secret, $new_expiration) = 
-              @stashed = ($v_id_next->(), 
-                          $random->($length), 
-                          $now + 2 * $rekey_interval, 
+            my ($v_id, $new_secret, $new_expiration) =
+              @stashed = ($v_id_next->(),
+                          $random->($length),
+                          $now + 2 * $rekey_interval,
                           @$payload);
             $vtable_insert->($v_id,
                              $new_expiration, $now, $new_secret,
@@ -91,13 +91,16 @@ Net::OAuth2::Scheme::Mixin::Current_Secret - the 'current_secret' option group
 
 =head1 VERSION
 
-version 0.010005_005
+version 0.02
 
 =head1 SYNOPSIS
 
 =head1 DESCRIPTION
 
-This manages a shared "current secret" as needed for signed-Bearer token format.
+This is an internal module that implements management of
+the shared "current secret" needed for C<bearer_signed> token format.
+
+See L<Net::OAuth2::Scheme::Factory> for actual option usage.
 
 =head1 AUTHOR
 

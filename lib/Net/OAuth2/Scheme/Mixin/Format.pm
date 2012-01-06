@@ -3,7 +3,7 @@ use warnings;
 
 package Net::OAuth2::Scheme::Mixin::Format;
 BEGIN {
-  $Net::OAuth2::Scheme::Mixin::Format::VERSION = '0.010005_005';
+  $Net::OAuth2::Scheme::Mixin::Format::VERSION = '0.02';
 }
 # ABSTRACT: the 'format' option group and 'token_validate'
 
@@ -59,13 +59,14 @@ Net::OAuth2::Scheme::Mixin::Format - the 'format' option group and 'token_valida
 
 =head1 VERSION
 
-version 0.010005_005
-
-=head1 SYNOPSIS
+version 0.02
 
 =head1 DESCRIPTION
 
-This creates a framework for specifying token formats.
+This is an internal module that implements the B<token_validate> method
+and provides hooks for implementing the various token formats.
+
+See L<Net::OAuth2::Scheme::Factory> for actual option usage.
 
 =head1 AUTHOR
 

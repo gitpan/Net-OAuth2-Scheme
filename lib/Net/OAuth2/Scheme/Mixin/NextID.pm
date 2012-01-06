@@ -3,7 +3,7 @@ use strict;
 
 package Net::OAuth2::Scheme::Mixin::NextID;
 BEGIN {
-  $Net::OAuth2::Scheme::Mixin::NextID::VERSION = '0.010005_005';
+  $Net::OAuth2::Scheme::Mixin::NextID::VERSION = '0.02';
 }
 # ABSTRACT: the 'v_id_next', 'counter', and 'random' option groups
 
@@ -150,13 +150,14 @@ Net::OAuth2::Scheme::Mixin::NextID - the 'v_id_next', 'counter', and 'random' op
 
 =head1 VERSION
 
-version 0.010005_005
-
-=head1 SYNOPSIS
+version 0.02
 
 =head1 DESCRIPTION
 
-This handles ID generation for use as VTable keys.
+This is an internal module that implements ID generation for use as
+VTable keys.
+
+See L<Net::OAuth2::Scheme::Factory> for actual option usage.
 
 =head1 AUTHOR
 

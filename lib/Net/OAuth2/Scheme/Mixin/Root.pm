@@ -3,7 +3,7 @@ use strict;
 
 package Net::OAuth2::Scheme::Mixin::Root;
 BEGIN {
-  $Net::OAuth2::Scheme::Mixin::Root::VERSION = '0.010005_005';
+  $Net::OAuth2::Scheme::Mixin::Root::VERSION = '0.02';
 }
 # ABSTRACT: defines the root group setup
 
@@ -92,13 +92,15 @@ Net::OAuth2::Scheme::Mixin::Root - defines the root group setup
 
 =head1 VERSION
 
-version 0.010005_005
+version 0.02
 
 =head1 SYNOPSIS
 
 =head1 DESCRIPTION
 
-This defines implementation contexts.
+This is an internal module that defines implementation contexts.
+
+See L<Net::OAuth2::Scheme::Factory> for actual option usage.
 
 =head1 AUTHOR
 

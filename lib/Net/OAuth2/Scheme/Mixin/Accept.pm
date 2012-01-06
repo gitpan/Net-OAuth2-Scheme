@@ -3,7 +3,7 @@ use warnings;
 
 package Net::OAuth2::Scheme::Mixin::Accept;
 BEGIN {
-  $Net::OAuth2::Scheme::Mixin::Accept::VERSION = '0.010005_005';
+  $Net::OAuth2::Scheme::Mixin::Accept::VERSION = '0.02';
 }
 # ABSTRACT: defines 'token_accept'
 
@@ -112,13 +112,15 @@ Net::OAuth2::Scheme::Mixin::Accept - defines 'token_accept'
 
 =head1 VERSION
 
-version 0.010005_005
+version 0.02
 
 =head1 SYNOPSIS
 
 =head1 DESCRIPTION
 
-This implements the default B<token_accept> client token method.
+This is an internal module that implements the B<token_accept> client method.
+
+See L<Net::OAuth2::Scheme::Factory> for actual option usage.
 
 =head1 AUTHOR
 

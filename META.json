@@ -39,7 +39,7 @@
          }
       }
    },
-   "release_status" : "testing",
+   "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
          "mailto" : "bug-net-oauth2-scheme@rt.cpan.org",
@@ -51,6 +51,6 @@
          "web" : "http://github.com/wrog/Net-OAuth2-Scheme"
       }
    },
-   "version" : "0.010005_005"
+   "version" : "0.02"
 }
 

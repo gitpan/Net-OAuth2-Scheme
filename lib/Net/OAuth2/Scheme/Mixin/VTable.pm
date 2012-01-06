@@ -3,7 +3,7 @@ use strict;
 
 package Net::OAuth2::Scheme::Mixin::VTable;
 BEGIN {
-  $Net::OAuth2::Scheme::Mixin::VTable::VERSION = '0.010005_005';
+  $Net::OAuth2::Scheme::Mixin::VTable::VERSION = '0.02';
 }
 # ABSTRACT: the 'vtable', 'vtable_cache', and 'vtable_pull_queue' option groups
 
@@ -276,13 +276,15 @@ Net::OAuth2::Scheme::Mixin::VTable - the 'vtable', 'vtable_cache', and 'vtable_p
 
 =head1 VERSION
 
-version 0.010005_005
-
-=head1 SYNOPSIS
+version 0.02
 
 =head1 DESCRIPTION
 
-This creates a framework for sharing secrets between authorization servers and resource servers.
+This is an internal module that implements the abstract shared cache
+for sharing secrets between authorization servers and resource
+servers.
+
+See L<Net::OAuth2::Scheme::Factory> for actual option usage.
 
 =head1 AUTHOR
 

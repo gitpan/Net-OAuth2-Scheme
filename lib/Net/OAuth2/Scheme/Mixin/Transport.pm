@@ -3,7 +3,7 @@ use strict;
 
 package Net::OAuth2::Scheme::Mixin::Transport;
 BEGIN {
-  $Net::OAuth2::Scheme::Mixin::Transport::VERSION = '0.010005_005';
+  $Net::OAuth2::Scheme::Mixin::Transport::VERSION = '0.02';
 }
 # ABSTRACT: the 'transport' option group and helper functions
 
@@ -258,13 +258,14 @@ Net::OAuth2::Scheme::Mixin::Transport - the 'transport' option group and helper 
 
 =head1 VERSION
 
-version 0.010005_005
-
-=head1 SYNOPSIS
+version 0.02
 
 =head1 DESCRIPTION
 
-This defines transport schemes.
+This is an internal module that provides helper functions for
+implementing the various transport schemes.
+
+See L<Net::OAuth2::Scheme::Factory> for actual option usage.
 
 =head1 AUTHOR
 
