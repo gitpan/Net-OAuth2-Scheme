@@ -3,7 +3,7 @@ use warnings;
 
 package Net::OAuth2::Scheme::Mixin::Accept;
 BEGIN {
-  $Net::OAuth2::Scheme::Mixin::Accept::VERSION = '0.020001_099';
+  $Net::OAuth2::Scheme::Mixin::Accept::VERSION = '0.020002_099';
 }
 # ABSTRACT: defines 'token_accept'
 
@@ -112,7 +112,7 @@ Net::OAuth2::Scheme::Mixin::Accept - defines 'token_accept'
 
 =head1 VERSION
 
-version 0.020001_099
+version 0.020002_099
 
 =head1 SYNOPSIS
 

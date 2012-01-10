@@ -3,7 +3,7 @@ use strict;
 
 package Net::OAuth2::Scheme::HmacUtil;
 BEGIN {
-  $Net::OAuth2::Scheme::HmacUtil::VERSION = '0.020001_099';
+  $Net::OAuth2::Scheme::HmacUtil::VERSION = '0.020002_099';
 }
 # ABSTRACT: hash functions and encodings
 
@@ -111,12 +111,12 @@ sub sign_binary {
     my ($id, $fn) = _hmac_name_to_id_fn($aname);
     my $extra = $o{extra};
     $extra = '' unless defined $extra;
-    return pack 'ww/aa*', $id, $fn->($secret, $value . $extra), $value;
+    return pack 'ww/a*a*', $id, $fn->($secret, $value . $extra), $value;
 }
 
 sub unsign_binary {
     my ($secret, $bin, $extra) = @_;
-    my ($id, $hash, $value) = unpack 'ww/aa*', $bin;
+    my ($id, $hash, $value) = unpack 'ww/a*a*', $bin;
     my ($keylen, $fn) = _hmac_id_to_len_fn($id) or
       return (undef, "unknown hash function id: $id");
     $extra = '' unless defined $extra;
@@ -216,7 +216,7 @@ Net::OAuth2::Scheme::HmacUtil - hash functions and encodings
 
 =head1 VERSION
 
-version 0.020001_099
+version 0.020002_099
 
 =head1 DESCRIPTION
 

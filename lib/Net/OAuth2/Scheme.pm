@@ -3,7 +3,7 @@ use strict;
 
 package Net::OAuth2::Scheme;
 BEGIN {
-  $Net::OAuth2::Scheme::VERSION = '0.020001_099';
+  $Net::OAuth2::Scheme::VERSION = '0.020002_099';
 }
 # ABSTRACT: Token scheme definition framework for OAuth 2.0
 
@@ -88,7 +88,7 @@ Net::OAuth2::Scheme - Token scheme definition framework for OAuth 2.0
 
 =head1 VERSION
 
-version 0.020001_099
+version 0.020002_099
 
 =head1 SYNOPSIS
 
