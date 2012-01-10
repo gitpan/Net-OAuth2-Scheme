@@ -3,7 +3,7 @@ use warnings;
 
 package Net::OAuth2::Scheme::Option::Builder;
 BEGIN {
-  $Net::OAuth2::Scheme::Option::Builder::VERSION = '0.02';
+  $Net::OAuth2::Scheme::Option::Builder::VERSION = '0.020001_099';
 }
 # ABSTRACT: poor man's mixin/role closure builder
 
@@ -304,7 +304,7 @@ Net::OAuth2::Scheme::Option::Builder - poor man's mixin/role closure builder
 
 =head1 VERSION
 
-version 0.02
+version 0.020001_099
 
 =head1 SYNOPSIS
 

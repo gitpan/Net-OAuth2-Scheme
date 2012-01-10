@@ -3,7 +3,7 @@ use warnings;
 
 package Net::OAuth2::Scheme::Random;
 BEGIN {
-  $Net::OAuth2::Scheme::Random::VERSION = '0.02';
+  $Net::OAuth2::Scheme::Random::VERSION = '0.020001_099';
 }
 # ABSTRACT: random number generator interface
 use Carp;
@@ -238,7 +238,7 @@ Net::OAuth2::Scheme::Random - random number generator interface
 
 =head1 VERSION
 
-version 0.02
+version 0.020001_099
 
 =head1 SYNOPSIS
 

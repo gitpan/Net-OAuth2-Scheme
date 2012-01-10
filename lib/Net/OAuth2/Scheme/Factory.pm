@@ -3,7 +3,7 @@ use warnings;
 
 package Net::OAuth2::Scheme::Factory;
 BEGIN {
-  $Net::OAuth2::Scheme::Factory::VERSION = '0.02';
+  $Net::OAuth2::Scheme::Factory::VERSION = '0.020001_099';
 }
 # ABSTRACT: the default factory for token schemes
 
@@ -32,7 +32,7 @@ Net::OAuth2::Scheme::Factory - the default factory for token schemes
 
 =head1 VERSION
 
-version 0.02
+version 0.020001_099
 
 =head1 SYNOPSIS
 
