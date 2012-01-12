@@ -33,7 +33,7 @@ my %WriteMakefileArgs = (
     'Thread::IID' => '0.04',
     'URI::Escape' => '0'
   },
-  'VERSION' => '0.020002_099',
+  'VERSION' => '0.03',
   'test' => {
     'TESTS' => 't/*.t'
   }

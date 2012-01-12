@@ -3,7 +3,7 @@ use strict;
 
 package Net::OAuth2::Scheme::HmacUtil;
 BEGIN {
-  $Net::OAuth2::Scheme::HmacUtil::VERSION = '0.020002_099';
+  $Net::OAuth2::Scheme::HmacUtil::VERSION = '0.03';
 }
 # ABSTRACT: hash functions and encodings
 
@@ -141,7 +141,7 @@ sub encode_base64url {
 
 sub decode_base64url {
     local $_ = shift;
-    y(A-Za-z0-9\-_)(\0\4\10\14\20\24\30\34\40\44\50\54\60\64\70\74\100\104\110\114\120\124\130\134\140\144\150\154\160\164\170\174\200\204\210\214\220\224\230\234\240\244\250\254\260\264\270\274\300\304\310\314\320\324\330\334\340\344\350\354\360\364\370\374)d;
+    y(A-Za-z0-9\-_)(\0\4\10\14\20\24\30\34\40\44\50\54\60\64\70\74\100\104\110\114\120\124\130\134\140\144\150\154\160\164\170\174\200\204\210\214\220\224\230\234\240\244\250\254\260\264\270\274\300\304\310\314\320\324\330\334\340\344\350\354\360\364\370\374);
     return pack 'B'. (((3*length)>>2)<<3) , join '', unpack 'B6'x(length), $_;
 
 #   # for some reason this is way faster than:
@@ -216,7 +216,7 @@ Net::OAuth2::Scheme::HmacUtil - hash functions and encodings
 
 =head1 VERSION
 
-version 0.020002_099
+version 0.03
 
 =head1 DESCRIPTION
 

@@ -3,7 +3,7 @@ use strict;
 
 package Net::OAuth2::Scheme::Mixin::Current_Secret;
 BEGIN {
-  $Net::OAuth2::Scheme::Mixin::Current_Secret::VERSION = '0.020002_099';
+  $Net::OAuth2::Scheme::Mixin::Current_Secret::VERSION = '0.03';
 }
 # ABSTRACT: the 'current_secret' option group
 
@@ -50,11 +50,11 @@ sub pkg_current_secret_simple {
     $self->parameter_prefix(current_secret_ => @_);
     my ( $random, $vtable_insert,
          $rekey_interval, $length, $payload)
-      = $self->uses_all(
-       qw(random   vtable_insert
-          current_secret_rekey_interval
-          current_secret_length
-          current_secret_payload));
+      = $self->uses_all
+        (qw(random   vtable_insert
+            current_secret_rekey_interval
+            current_secret_length
+            current_secret_payload));
 
     my @stashed = (undef, undef, 0, @$payload);
 
@@ -91,7 +91,7 @@ Net::OAuth2::Scheme::Mixin::Current_Secret - the 'current_secret' option group
 
 =head1 VERSION
 
-version 0.020002_099
+version 0.03
 
 =head1 SYNOPSIS
 

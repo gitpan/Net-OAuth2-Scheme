@@ -3,7 +3,7 @@ use strict;
 
 package Net::OAuth2::Scheme::Mixin::VTable;
 BEGIN {
-  $Net::OAuth2::Scheme::Mixin::VTable::VERSION = '0.020002_099';
+  $Net::OAuth2::Scheme::Mixin::VTable::VERSION = '0.03';
 }
 # ABSTRACT: the 'vtable', 'vtable_cache', and 'vtable_pull_queue' option groups
 
@@ -147,8 +147,8 @@ Default_Value cache_prefix => 'vtab';
 #     keys are prefixed with this (default = 'vtab:')
 sub pkg_vtable_cache_object {
     my __PACKAGE__ $self = shift;
-    my ( $cache,     $grace,     $prefix) = $self->uses_all(
-       qw(cache cache_grace cache_prefix));
+    my ( $cache,     $grace,     $prefix) = $self->uses_all
+      (qw(cache cache_grace cache_prefix));
 
     $prefix .= ':' if length($prefix) && $prefix !~ m/:\z/;
     $self->croak("cache_prefix ($prefix) cannot contain interior colon (:)")
@@ -276,7 +276,7 @@ Net::OAuth2::Scheme::Mixin::VTable - the 'vtable', 'vtable_cache', and 'vtable_p
 
 =head1 VERSION
 
-version 0.020002_099
+version 0.03
 
 =head1 DESCRIPTION
 
